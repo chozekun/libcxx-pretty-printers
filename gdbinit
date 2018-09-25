@@ -1,3 +1,5 @@
+set print pretty on
+python
 # Pretty-printers for libc++.
 
 # Copyright (C) 2008-2013 Free Software Foundation, Inc.
@@ -1115,3 +1117,5 @@ def build_libcxx_dictionary():
                        StdDequeIteratorPrinter)
 
 build_libcxx_dictionary()
+register_libcxx_printers(None)
+end
